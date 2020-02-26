@@ -24,7 +24,7 @@ function onClick(){
 function repoRender(arr){
   $('.repos').empty();
   for (let i = 0; i < arr.length; i++){
-    $('.repos').append(`<li><ul><li>Name: ${arr[i].full_name}</li><li>url: <a href="${arr[i].url}" target="_blank">${arr[i].url}</a></li></ul></li><br>`)
+    $('.repos').append(`<li><ul><li>Name: ${arr[i].full_name}</li><li>url: <a href="${arr[i].html_url}" target="_blank">${arr[i].html_url}</a></li></ul></li><br>`)
   }
 }
-onClick()
+$(onClick())
